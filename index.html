@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3/6/2024</title>
+</head>
+<body>
+    <script>
+        document.write("Sample Output" + "<br>" + "<br>");
+        var x = Math.floor(Math.random() * 1001 );
+        document.write("Randomly Generated Number: " + x + "<br>");
+        var num = x.toString();
+
+        if(num >= 100)
+        {
+            var hundreds = num[0] + "00, ";
+            var tens = num[1] + "0, ";
+            var ones = num[2];
+            document.write("Breakdown: " + [hundreds], [tens], [ones]);
+        }
+
+        else if(num >= 10 && num <=99)
+        {
+            var tens = num[0] + "0, ";
+            var ones = num[1];
+            document.write("Breakdown: " + [tens], [ones]);
+        }
+
+        else
+        {
+            var ones = num[0];
+            document.write("Breakdown: " + [ones]);
+        }
+
+        document.write("<br>" + Date());
+    </script>
+</body>
+</html>
